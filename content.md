@@ -149,9 +149,27 @@ count: false
 # Sprachmodelle
 
 - (gemeinsame) Wahrscheinlichkeit einer Folge von Ereignissen als Produkt der bedingten Wahrscheinlichkeiten der Einzelereignisse
-`
-\(P(e_1^m)=P(e_1)\Prod_{i=2}^{m}P(e_i|e_1^{i-1})\)
-`
+`\(P(e_1^m)=P(e_1)\prod_{i=2}^{m}P(e_i|e_1^{i-1})\)`
+- Berechnung der bedingten Einzelwahrscheinlichkeiten durch Zählen
+`\(P(e_i|e_1^{i-1})=\frac{C(w_1^{i-1}\cdot w_i)}{\sum_{a\in\Sigma}C(w_1^{i-1}\cdot a)}\)`
+- Summe der Wahrscheinlichkeiten für alle Einzelereignisse: 1
+- Problem?
+
+---
+
+count: false
+
+# Sprachmodelle
+
+- (gemeinsame) Wahrscheinlichkeit einer Folge von Ereignissen als Produkt der bedingten Wahrscheinlichkeiten der Einzelereignisse
+`\(P(e_1^m)=P(e_1)\prod_{i=2}^{m}P(e_i|e_1^{i-1})\)`
+- Berechnung der bedingten Einzelwahrscheinlichkeiten durch Zählen
+`\(P(e_i|e_1^{i-1})=\frac{C(w_1^{i-1}\cdot w_i)}{\sum_{a\in\Sigma}C(w_1^{i-1}\cdot a)}\)`
+- Summe der Wahrscheinlichkeiten für alle Einzelereignisse: 1
+- Problem?
+    + Sprachmodell = Korpus
+    + kein Korpus groß genug (unendlich viele Kontexte)
+    + **keine Verallgemeinerung**
 
 ---
 
@@ -159,8 +177,26 @@ count: false
 
 - Folge von *n* Sachen
     + Zeichen, Wörter, Silben etc.
+- Markov-Annahme `\(P(e_i|e_1^{i-1})\approx P(e_i|e_{i-(\pmb{n}-1)}^{i-1})\)`
+    + Verdichtung des Ereignisraumes (Anzahl Kontexte entspricht `\(\Sigma^{\pmb{N}-1}\)`)
 - Anwendung über Sprachmodellierung hinaus: typische Verbindungen (Kollokationen)
     + häufige, nicht-triviale *n*-Gramme (i.e. gemeinsame Vorkommen von Wörtern)
+- Immer noch Probleme?
+---
+
+count: false
+
+# *n*-Gramme
+
+- Folge von *n* Sachen
+    + Zeichen, Wörter, Silben etc.
+- Markov-Annahme `\(P(e_i|e_1^{i-1})\approx P(e_i|e_{i-(\pmb{n}-1)}^{i-1})\)`
+    + Verdichtung des Ereignisraumes (Anzahl Kontexte entspricht `\(\Sigma^{\pmb{N}-1}\)`)
+- Anwendung über Sprachmodellierung hinaus: typische Verbindungen (Kollokationen)
+    + häufige, nicht-triviale *n*-Gramme (i.e. gemeinsame Vorkommen von Wörtern)
+- Immer noch Probleme?
+    + selten alle *n*-Gramme in einem Korpus beobachtbar
+    + unendlich große Alphabete (z.B. Wörter im Deutschen)
 
 ---
 
