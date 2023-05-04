@@ -100,7 +100,7 @@ count: false
 .cols[
 .sixty[
 - hierarchiches Ordnersystem
-    + **Baumstruktur** mitWurzelelement `/`
+    + **Baumstruktur** mit Wurzelelement `/`
     + versteckte Dateien
     + Links als Querverbindungen
 - Shell selbst ein Befehl (`sh`, `bash`, `zsh` ...)
