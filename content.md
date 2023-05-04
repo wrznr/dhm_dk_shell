@@ -105,7 +105,7 @@ count: false
     + versteckte Dateien
     + Links als Querverbindungen
 - Shell selbst ein Befehl (`sh`, `bash`, `zsh` ...)
-    + Fokus: **B**ourne **a**gain **sh**ell
+    + Fokus: **B**ourne-**a**gain **sh**ell
 - wichtige Befehle
     + `ls` ... *list*
     + `mkdir` ... *make directory*
@@ -116,7 +116,7 @@ count: false
     + `|` ... *concatenate commands*
 ]
 .fourty[
-<p style="margin-top:-20px">
+<p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Bash_screenshot.png" /><br />
 <a style="font-size:8pt" href="https://commons.wikimedia.org/wiki/File:Bash_screenshot.png">Bild: Emx (Wikimedia Foundation), GPL</a>
 </p>
