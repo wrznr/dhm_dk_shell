@@ -100,8 +100,7 @@ count: false
 .cols[
 .sixty[
 - hierarchiches Ordnersystem
-    + **Baumstruktur**
-    + Wurzelelement `/`
+    + **Baumstruktur** mitWurzelelement `/`
     + versteckte Dateien
     + Links als Querverbindungen
 - Shell selbst ein Befehl (`sh`, `bash`, `zsh` ...)
@@ -126,9 +125,69 @@ count: false
 ---
 
 class: part-slide
+count: false
+
+# Sprachmodellierung
+
+---
+
+# Sprachmodellierung
+
+- Bestimmung der Wahrscheinlichkeit einer Ereignisfolge `\(P(E)`
+- wichtiges Element in vielen Ansätzen des maschinellen Lernens
+- Teilterm im **Satz von Bayes**: `\(P(C|E) = \frac{P(E|C)\cdot P(C)}{P(E)}\)`
+- Heute: neuronale Netze → Schätzung bzw. *Training* von Wahrscheinlichkeitsverteilungen
+- Früher: *n*-Gramme → Berechnung von Wahrscheinlichkeitsverteilungen
+
+<p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Six_n-grams_frequently_found_in_titles_of_publications_about_Coronavirus_disease_2019%2C_as_of_7_May_2020.svg" /><br />
+<a style="font-size:8pt" href="https://commons.wikimedia.org/wiki/File:Six_n-grams_frequently_found_in_titles_of_publications_about_Coronavirus_disease_2019,_as_of_7_May_2020.svg">Bild: Daneil Mietchen (Own work), CC0</a>
+</p>
+
+---
+
+# Sprachmodelle
+
+- ...
+
+---
+
+# *n*-Gramme
+
+- Folge von *n* Sachen
+    + Zeichen, Wörter, Silben etc.
+- Anwendung über Sprachmodellierung hinaus: typische Verbindungen (Kollokationen)
+    + häufige, nicht-triviale *n*-Gramme (i.e. gemeinsame Vorkommen von Wörtern)
+
+---
+
+class: part-slide
+count: false
+
+# Unix for Poets
+
+---
+
+# Unix for Poets
+
+- Erstellung *n*-Gramm-basierter Sprachmodelle mit der Unix Shell
+- Kenneth W. Church 
+    + Amerikanischer Computerlinguist
+    + Head of data mining, Bell Labs
+    + [Publikationsliste](https://dblp.org/pid/c/KennethWardChurch.html)
+        * U.a. Mutual Information [Church and Hanks 1989](https://aclanthology.org/P89-1010.pdf)
+
+<p>
+<img src="https://avatars.githubusercontent.com/u/18170281?v=4" /><br />
+<a style="font-size:8pt" href="https://github.com/kwchurch">Bild: Kenneth Church (Own work), All rights res.</a>
+</p>
+
+---
+
+class: part-slide
 
 # Many thanks for your attention!
 
 <center>
-<a href="https://wrznr.github.io/slide-template/">wrznr.github.io/slide-template</a>
+<a href="https://wrznr.github.io/dhm_dk_shell/">wrznr.github.io/dhm_dk_shell/</a>
 </center>
