@@ -75,9 +75,9 @@ count: false
     + Linux als freie Implementierung
 ]
 .fourty[
-<p style="margin-top:-20px">
+<p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/UNIX®.png" height="200px" /><br />
-<a style="font-size:8pt" href="https://commons.wikimedia.org/wiki/File:Gneis2.jpg">Bild: Open Company Ltd. (Registered TM)</a>
+<a style="font-size:8pt" href="https://commons.wikimedia.org/wiki/File:UNIX%C2%AE.png">Bild: Open Company Ltd. (Registered TM)</a>
 </p>
 ]
 ]
@@ -97,6 +97,8 @@ count: false
 
 # Shell als basales Steuerungsinstrument
 
+.cols[
+.sixty[
 - hierarchiches Ordnersystem
     + **Baumstruktur**
     + Wurzelelement `/`
@@ -112,6 +114,14 @@ count: false
     + `echo` ... *repeat a given string*
     + `>,<` ... *redirect input*
     + `|` ... *concatenate commands*
+]
+.fourty[
+<p style="margin-top:-20px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Bash_screenshot.png" /><br />
+<a style="font-size:8pt" href="https://commons.wikimedia.org/wiki/File:Bash_screenshot.png">Bild: Emx (Wikimedia Foundation), GPL</a>
+</p>
+]
+]
 
 ---
 
