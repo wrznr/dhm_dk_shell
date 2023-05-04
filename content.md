@@ -139,9 +139,9 @@ count: false
 - Heute: neuronale Netze → Schätzung bzw. *Training* von Wahrscheinlichkeitsverteilungen
 - Früher: *n*-Gramme → Berechnung von Wahrscheinlichkeitsverteilungen
 
-<p style="margin-top:-20px">
+<p style="margin-top:-40px">
 <center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Six_n-grams_frequently_found_in_titles_of_publications_about_Coronavirus_disease_2019%2C_as_of_7_May_2020.svg" height="200px" /><br />
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Six_n-grams_frequently_found_in_titles_of_publications_about_Coronavirus_disease_2019%2C_as_of_7_May_2020.svg" height="250px" />
 <a style="font-size:8pt" href="https://commons.wikimedia.org/wiki/File:Six_n-grams_frequently_found_in_titles_of_publications_about_Coronavirus_disease_2019,_as_of_7_May_2020.svg">Bild: Daneil Mietchen (Own work), CC0</a>
 </center>
 </p>
