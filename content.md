@@ -177,7 +177,7 @@ count: false
 
 # *n*-Gramme
 
-- Folge von *n* Sachen
+- Folge von *n* Ereignissen
     + Zeichen, Wörter, Silben etc.
 - Markov-Annahme `\(P(e_i|e_1^{i-1})\approx P(e_i|e_{i-(\pmb{n}-1)}^{i-1})\)`
     + Verdichtung des Ereignisraumes (Anzahl Kontexte entspricht `\(\Sigma^{\pmb{N}-1}\)`)
@@ -219,9 +219,32 @@ count: false
         * U.a. *Mutual Information* [(Church and Hanks 1989)](https://aclanthology.org/P89-1010.pdf)
 
 <p>
+<center>
 <img src="https://avatars.githubusercontent.com/u/18170281?v=4" height="200px" /><br />
 <a style="font-size:8pt" href="https://github.com/kwchurch">Bild: Kenneth Church (Own work), All rights res.</a>
+</center>
 </p>
+
+---
+
+# Unix for Poets
+
+- Liste wichtiger Kommandos
+.cols[
+.fifty[
+    + `tr` ... *translate*
+    + `sort` ... *sort*
+    + `uniq` ... *remove duplicates*
+    + `wc` ... *word count*
+    + `sed` ... *sting edit*
+]
+.fifty[
+    + `head` ... `beginning of file`
+    + `tail` ... `end of file`
+    + `grep` ... `global regex print`
+]
+]
+
 
 ---
 
