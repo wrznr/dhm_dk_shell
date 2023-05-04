@@ -148,7 +148,10 @@ count: false
 
 # Sprachmodelle
 
-- ...
+- (gemeinsame) Wahrscheinlichkeit einer Folge von Ereignissen als Produkt der bedingten Wahrscheinlichkeiten der Einzelereignisse
+```
+\(P(e_1^m)=P(e_1)\Prod_{i=2}^{m}P(e_i|e_1^{i-1})\)
+```
 
 ---
 
