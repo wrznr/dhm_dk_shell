@@ -93,6 +93,25 @@ count: false
 - **1991**: Entwicklung von Linux, eines freien und quelloffenen Nachbaus von Linux durch Linus Torvalds
 - **Heute**: Mehrheit der Computer dieser Welt laufen mit Unix-basierten Systemen 
 
+---
+
+# Shell als basales Steuerungsinstrument
+
+- hierarchiches Ordnersystem
+    + **Baumstruktur**
+    + Wurzelelement `/`
+    + versteckte Dateien
+    + Links als Querverbindungen
+- Shell selbst ein Befehl (`sh`, `bash`, `zsh` ...)
+    + Fokus: **B**ourne **a**gain **sh**ell
+- wichtige Befehle
+    + `ls` ... *list*
+    + `mkdir` ... *make directory*
+    + `cd` ... *change directory*
+    + `touch` ... *create an empty file*
+    + `echo` ... *repeat a given string*
+    + `>,<` ... *redirect input*
+    + `|` ... *concatenate commands*
 
 ---
 
