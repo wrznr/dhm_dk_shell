@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>Date</td>
+      <td>5. Mai 2023</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -25,7 +25,7 @@ layout: true
       <td style="text-align:left">Referat 4.3</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>05. Mai 2023</b></td>
+      <td style="font-size:8pt"><b>5. Mai 2023</b></td>
     </tr>
     <tr>
       <td style="font-size:8pt">Seminar *Datenkompetenz für Digital Humanities*</td>
