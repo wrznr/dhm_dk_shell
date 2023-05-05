@@ -229,22 +229,80 @@ count: false
 
 # Unix for Poets
 
-- Liste wichtiger Kommandos
 .cols[
 .fifty[
+- Liste wichtiger Kommandos
     + `tr` ... *translate*
     + `sort` ... *sort*
     + `uniq` ... *remove duplicates*
     + `wc` ... *word count*
-    + `sed` ... *sting edit*
+    + `sed` ... *string edit*
+    + `awk` ... *Aho, Weinberger, Kernighan*
+    + `shuf` ... *shuffle*
 ]
 .fifty[
-    + `head` ... `beginning of file`
-    + `tail` ... `end of file`
-    + `grep` ... `global regex print`
+- Liste wichtiger Kommandos
+    + `head` ... *beginning of file*
+    + `tail` ... *end of file*
+    + `grep` ... *global regex print*
+    + `cut` ... *cut (into columns)*
+    + `paste` ... *paste (columns)*
+    + `cat` ... *concatenate*
+    + `bc` ... *basic calculator*
 ]
 ]
 
+---
+
+# Übung 1: Wörter zählen
+
+- Eingabe: Text(-Datei)
+- Ausgabe: (tabgetrennte) Liste von Frequenzen und Wörtern 
+- Vorgehen: Wörter identifizieren, sortieren, zählen
+
+---
+
+# Übung 1: Wörter zählen
+
+- Eingabe: Text(-Datei)
+- Ausgabe: (tabgetrennte) Liste von Frequenzen und Wörtern 
+- Vorgehen: Wörter identifizieren, sortieren, zählen
+
+```
+$ tr -sc 'A-Za-z' '\n' < input.txt > tokenized.txt
+$ sort tokenized.txt > tokenized.sorted.txt
+$ uniq -c tokenized.sorted.txt > unigrams.freqs.txt
+$ shuf unigrams.freqs.txt | head -n 10
+```
+
+Beobachtungen?
+
+---
+
+# Übung 2: Bigramme zählen
+
+- Eingabe: Text(-Datei)
+- Ausgabe: (tabgetrennte) Liste von Frequenzen und Bigrammen 
+- Vorgehen: Wörter identifizieren, Wörter und nächste Wörter zusammenbringen, sortieren, zählen
+
+---
+
+# Übung 2: Bigramme zählen
+
+- Eingabe: Text(-Datei)
+- Ausgabe: (tabgetrennte) Liste von Frequenzen und Bigrammen 
+- Vorgehen: Wörter identifizieren, Wörter und nächste Wörter zusammenbringen, sortieren, zählen
+
+```
+$ tr -sc 'A-Za-z' '\n' < input.txt > tokenized.txt
+$ tail -n +2 tokenized.txt > tokenized.next.txt
+$ paste tokenized.txt tokenized.next.txt > bigrams.txt
+$ sort bigrams.txt > bigrams.sorted.txt
+$ uniq -c bigrams.sorted.txt > bigram.freqs.txt
+$ shuf bigrams.freqs.txt | head -n 10
+```
+
+Beobachtungen?
 
 ---
 
